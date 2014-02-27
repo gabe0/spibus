@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-25T17:01:19</DateModified>
+  <DateModified>2014-02-27T14:38:49</DateModified>
   <ModuleName>master</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/hojmang/Documents/GitHub/CPE187-S14/spibus/iseconfig/master.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/hojmang/Documents/GitHub/CPE187-S14/spibus\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/hojmang/Documents/GitHub/spibus/iseconfig/master.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/hojmang/Documents/GitHub/spibus\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-11T14:31:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

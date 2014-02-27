@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Reading design: master.prj
 
@@ -334,12 +334,12 @@ Drivers are:
    Output signal of FDCE instance <buffer_0>
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.33 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.86 secs
  
 --> 
 
-Total memory usage is 200540 kilobytes
+Total memory usage is 199516 kilobytes
 
 Number of errors   :   22 (   0 filtered)
 Number of warnings :   15 (   0 filtered)
