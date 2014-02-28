@@ -1,16 +1,16 @@
-Release 12.2 - xst M.63c (nt)
+Release 12.2 - xst M.63c (nt64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: master.prj
 
@@ -334,12 +334,12 @@ Drivers are:
    Output signal of FDCE instance <buffer_0>
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.86 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.64 secs
  
 --> 
 
-Total memory usage is 199516 kilobytes
+Total memory usage is 242148 kilobytes
 
 Number of errors   :   22 (   0 filtered)
 Number of warnings :   15 (   0 filtered)
