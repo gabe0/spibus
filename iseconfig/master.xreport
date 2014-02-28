@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2014-02-27T16:43:13</DateModified>
+=======
+  <DateModified>2014-02-27T20:44:59</DateModified>
+>>>>>>> 5f1e4d348b2cecaeb4e2804fd9d0773be4865da6
   <ModuleName>master</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/hojmang/Documents/GitHub/spibus/iseconfig/master.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/hojmang/Documents/GitHub/spibus\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/iseconfig/master.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Gabriel D Hojman/Documents/GitHub/spibus\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-11T14:31:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -28,8 +28,6 @@ module master(
     output reg sclk,
     output reg ss
     );
-	 
-	//reg sclk, mosi, ss;
 	
 	reg [1:0] curr_state, next_state;
 	reg [7:0] buffer, transfer_reg;
@@ -48,8 +46,8 @@ module master(
 			transfer_reg <= 'b0;
 			buffer <= 'b0;
 			next_state <= IDLE;
-			sclk <= 1'b1;
 			mosi <= 1'b0;
+			ss <= 1'b1;
 		end
 		else
 		begin //only execute at the posedge of clock
@@ -86,7 +84,7 @@ module master(
 		case(curr_state)
 			IDLE:
 			begin
-				ss = 1'b0;
+				ss = 1'b1;
 			end
 			
 			LOAD:
