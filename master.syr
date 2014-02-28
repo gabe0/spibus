@@ -3,13 +3,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: master.prj
@@ -130,218 +130,16 @@ Analyzing top module <master>.
 	LOAD = 3'b001
 	TRANSFER = 3'b010
 	UNLOAD = 3'b100
-WARNING:Xst:905 - "master.v" line 85: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <buffer>, <cnt>
-Module <master> is correct for synthesis.
+ERROR:Xst:899 - "master.v" line 43: The logic for <sclk> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+WARNING:Xst:905 - "master.v" line 83: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <cnt>
  
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <sclk> in unit <master> has a constant value of 1 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <next_state> in unit <master> has a constant value of 00 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <next_state> in unit <master> has a constant value of 01 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <mosi> in unit <master> has a constant value of 0 during circuit operation. The register is replaced by logic.
-
-Synthesizing Unit <master>.
-    Related source file is "master.v".
-WARNING:Xst:2110 - Clock of register <sclk> seems to be also used in the data or control logic of that element.
-WARNING:Xst:2110 - Clock of register <sclk> seems to be also used in the data or control logic of that element.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <transfer_reg_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <mosi>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Using one-hot encoding for signal <curr_state>.
-WARNING:Xst:737 - Found 4-bit latch for signal <next_state>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-WARNING:Xst:737 - Found 1-bit latch for signal <ss>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-WARNING:Xst:737 - Found 4-bit latch for signal <cnt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-    Found 1-bit register for signal <sclk>.
-    Found 8-bit register for signal <buffer>.
-    Found 4-bit register for signal <curr_state>.
-    Found 4-bit comparator less for signal <mosi$cmp_lt0000> created at line 100.
-    Found 4-bit comparator greatequal for signal <next_state$cmp_ge0000> created at line 100.
-    Found 8-bit register for signal <transfer_reg>.
-    Summary:
-	inferred  30 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
-Unit <master> synthesized.
-
-
-=========================================================================
-HDL Synthesis Report
-
-Macro Statistics
-# Adders/Subtractors                                   : 1
- 4-bit adder                                           : 1
-# Registers                                            : 27
- 1-bit register                                        : 26
- 4-bit register                                        : 1
-# Latches                                              : 12
- 1-bit latch                                           : 10
- 4-bit latch                                           : 2
-# Comparators                                          : 2
- 4-bit comparator greatequal                           : 1
- 4-bit comparator less                                 : 1
-
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Macro Statistics
-# Adders/Subtractors                                   : 1
- 4-bit adder                                           : 1
-# Registers                                            : 30
- Flip-Flops                                            : 30
-# Latches                                              : 12
- 1-bit latch                                           : 10
- 4-bit latch                                           : 2
-# Comparators                                          : 2
- 4-bit comparator greatequal                           : 1
- 4-bit comparator less                                 : 1
-
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <mosi>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LDE instance <mosi/0>
-   Signal <mosi> in Unit <master> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <sclk>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDP instance <sclk>
-   Output signal of FD_1 instance <sclk_ren>
-   Signal <sclk> in Unit <master> is assigned to VCC
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <next_state<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <next_state/3/0>
-   Signal <next_state<3>> in Unit <master> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <next_state<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <next_state/2/0>
-   Signal <next_state<2>> in Unit <master> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <next_state<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <next_state/1/0>
-   Signal <next_state<1>> in Unit <master> is assigned to GND
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <next_state<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <next_state/0/0>
-   Signal <next_state<0>> in Unit <master> is assigned to VCC
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_7_ren/0>
-   Output signal of FDCE instance <transfer_reg_7>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_6_ren/0>
-   Output signal of FDCE instance <transfer_reg_6>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_5_ren/0>
-   Output signal of FDCE instance <transfer_reg_5>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_4_ren/0>
-   Output signal of FDCE instance <transfer_reg_4>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_3_ren/0>
-   Output signal of FDCE instance <transfer_reg_3>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_2_ren/0>
-   Output signal of FDCE instance <transfer_reg_2>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_1_ren/0>
-   Output signal of FDCE instance <transfer_reg_1>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <transfer_reg<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <transfer_reg_0_ren/0>
-   Output signal of FDCE instance <transfer_reg_0>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDCE instance <buffer_7>
-   Output signal of FDE_1 instance <buffer_7_ren>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDCE instance <buffer_6>
-   Output signal of FDE_1 instance <buffer_6_ren>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDE_1 instance <buffer_5_ren>
-   Output signal of FDCE instance <buffer_5>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDCE instance <buffer_4>
-   Output signal of FDE_1 instance <buffer_4_ren>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDCE instance <buffer_3>
-   Output signal of FDE_1 instance <buffer_3_ren>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDE_1 instance <buffer_2_ren>
-   Output signal of FDCE instance <buffer_2>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDCE instance <buffer_1>
-   Output signal of FDE_1 instance <buffer_1_ren>
-
-ERROR:Xst:528 - Multi-source in Unit <master> on signal <buffer<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of FDE_1 instance <buffer_0_ren>
-   Output signal of FDCE instance <buffer_0>
-
-
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.64 secs
- 
+Found 1 error(s). Aborting synthesis.
 --> 
 
-Total memory usage is 242148 kilobytes
+Total memory usage is 237412 kilobytes
 
-Number of errors   :   22 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

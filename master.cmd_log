@@ -28,3 +28,6 @@ xst -intstyle ise -ifn "C:/Users/hojmang/Documents/GitHub/CPE187-S14/spibus/mast
 xst -intstyle ise -ifn "C:/Users/hojmang/Documents/GitHub/spibus/master.xst" -ofn "C:/Users/hojmang/Documents/GitHub/spibus/master.syr" 
 xst -intstyle ise -ifn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.xst" -ofn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.syr" 
 xst -intstyle ise -ifn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.xst" -ofn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.syr" 
+xst -intstyle ise -ifn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.xst" -ofn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.syr" 
+xst -intstyle ise -ifn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.xst" -ofn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.syr" 
+xst -intstyle ise -ifn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.xst" -ofn "C:/Users/Gabriel D Hojman/Documents/GitHub/spibus/master.syr" 
