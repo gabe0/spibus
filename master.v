@@ -25,7 +25,7 @@ module master(
 	 input reset,
 	 input miso,
     output reg mosi,
-    output reg sclk,
+    output wire sclk,
     output reg ss
     );
 	
@@ -34,13 +34,14 @@ module master(
 	
 	reg [4:0] cnt;
 	
+	assign sclk = clk;
+	
 	initial cnt = 0;
 	
 	parameter IDLE = 3'b000, LOAD = 3'b001, TRANSFER = 3'b10, FINISH = 3'b11, UNLOAD = 3'b100;
 	
 	always@(posedge clk or negedge reset) //sequential posedge block
 	begin
-		sclk <= clk;
 		if(reset == 0) //if reset
 		begin
 			transfer_reg <= 'b0;
@@ -55,14 +56,13 @@ module master(
 		end
 		else if(curr_state == IDLE) //accept new data into buffer when IDLE
 		begin
-				buffer[7:0] <= buffer[7:0] << 1;
+				buffer <= buffer << 1;
 				buffer[0] <= din;
 		end
 	end
 	
 	always@(negedge clk) //sequential negedge block
 	begin
-		sclk <= clk;
 		curr_state <= next_state;
 		if(ss == 1'b0) //transfer new data bit from MISO
 		begin
