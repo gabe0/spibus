@@ -25,23 +25,24 @@ module master(
 	 input reset,
 	 input miso,
     output reg mosi,
-    output reg sclk,
+    output wire sclk,
     output reg ss
     );
 	
 	reg [1:0] curr_state, next_state;
 	reg [7:0] buffer, transfer_reg;
 	
-	reg [3:0] cnt;
+	reg [4:0] cnt;
+	
+	assign sclk = clk;
 	
 	initial cnt = 0;
 	
 	parameter IDLE = 3'b000, LOAD = 3'b001, TRANSFER = 3'b10, FINISH = 3'b11, UNLOAD = 3'b100;
 	
-	always@(posedge clk or negedge reset)
+	always@(posedge clk or negedge reset) //sequential posedge block
 	begin
-		sclk <= clk;
-		if(reset == 0)
+		if(reset == 0) //if reset
 		begin
 			transfer_reg <= 'b0;
 			buffer <= 'b0;
@@ -49,58 +50,52 @@ module master(
 			mosi <= 1'b0;
 			ss <= 1'b1;
 		end
-		else
-		begin //only execute at the posedge of clock
-			curr_state <= next_state;
-			if(ss == 1'b0) 
-			begin
-				transfer_reg[7:0] <= transfer_reg[7:0] << 1;
-				transfer_reg[0] <= miso;
-			end
-			else
-			begin
-				buffer[7:0] <= buffer[7:0] << 1;
-				buffer[0] <= din;
-			end
-		end
-	end
-	
-	always@(negedge clk)
-	begin
-		sclk <= clk;
-		if(start == 1'b1) //when negedge clk && start == 1
+		if(start == 1'b1) //when posedge clk && start == 1
 		begin
 			next_state <= LOAD;
 		end
-		else //if we're not done loading data, then accept new data into buffer
+		else if(curr_state == IDLE) //accept new data into buffer when IDLE
+		begin
+				buffer <= buffer << 1;
+				buffer[0] <= din;
+		end
+	end
+	
+	always@(negedge clk) //sequential negedge block
+	begin
+		curr_state <= next_state;
+		if(ss == 1'b0) //transfer new data bit from MISO
+		begin
+			transfer_reg[7:0] <= transfer_reg[7:0] << 1;
+			transfer_reg[0] <= miso;
+		end
+		if(curr_state == IDLE) //accept new data into buffer when IDLE
 		begin
 			buffer[7:0] <= buffer[7:0] << 1;
 			buffer[0] <= din;
 		end
 	end
 	
-	always@(curr_state or transfer_reg)
+	always@(curr_state or transfer_reg) //combinational block
 	begin
 		case(curr_state)
 			IDLE:
 			begin
 				ss = 1'b1;
 			end
-			
 			LOAD:
 			begin
 				transfer_reg[7:0] = buffer[7:0];
 				next_state = TRANSFER;
 			end
-			
 			TRANSFER:
 			begin
-				if(cnt < 8)
+				if(cnt < 16)
 				begin
 					ss = 1'b0;
 					mosi = transfer_reg[7];
 					cnt = cnt + 1;
-					if(cnt == 8)
+					if(cnt == 16)
 					begin
 						next_state = FINISH;
 					end
@@ -111,7 +106,6 @@ module master(
 			begin
 				ss = 1'b1;
 				cnt = 1'b0;
-				sclk = 1'b1;
 				next_state = UNLOAD;
 			end
 			

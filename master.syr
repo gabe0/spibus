@@ -1,16 +1,16 @@
-Release 12.2 - xst M.63c (nt64)
+Release 12.2 - xst M.63c (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: master.prj
 
@@ -130,16 +130,24 @@ Analyzing top module <master>.
 	LOAD = 3'b001
 	TRANSFER = 3'b010
 	UNLOAD = 3'b100
-ERROR:Xst:899 - "master.v" line 43: The logic for <sclk> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-WARNING:Xst:905 - "master.v" line 83: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[7]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[6]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[5]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[4]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[3]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[2]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[1]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 60: The logic for <buffer[0]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+ERROR:Xst:899 - "master.v" line 55: The logic for <next_state> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+WARNING:Xst:905 - "master.v" line 80: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <cnt>
  
-Found 1 error(s). Aborting synthesis.
+Found 9 error(s). Aborting synthesis.
 --> 
 
-Total memory usage is 237412 kilobytes
+Total memory usage is 198696 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Number of errors   :    9 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <ImplementationReportsDirectory>C:/Users/hojmang/Documents/GitHub/spibus\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-28T13:01:36</DateInitialized>
+=======
+  <DateModified>2014-03-02T15:56:17</DateModified>
+>>>>>>> 1d9cbb8c7ae6b797b9431e9534075005cfe4cb51
   <ModuleName>master</ModuleName>
   <DateModified>2014-03-02T17:42:36</DateModified>
   <SavedFilePath>C:/Users/hojmang/Documents/GitHub/spibus/iseconfig/master.xreport</SavedFilePath>
