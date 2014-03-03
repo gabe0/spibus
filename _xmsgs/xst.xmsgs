@@ -5,28 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[7]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[7]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[6]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[6]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[5]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[5]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[4]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[4]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[3]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[3]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[2]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[2]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[1]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[1]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
-<msg type="error" file="Xst" num="899" delta="new" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">60</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[0]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
+<msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">60</arg>: The logic for &lt;<arg fmt="%s" index="3">buffer[0]</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
 </msg>
 
 <msg type="error" file="Xst" num="899" delta="old" >&quot;<arg fmt="%s" index="1">master.v</arg>&quot; line <arg fmt="%d" index="2">55</arg>: The logic for &lt;<arg fmt="%s" index="3">next_state</arg>&gt; does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
