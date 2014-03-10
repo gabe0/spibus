@@ -1,3 +1,4 @@
+verilog isim_temp "clk_div.v"
 verilog isim_temp "master.v"
-verilog isim_temp "top_tb.v"
+verilog isim_temp "master_tb.v"
 verilog isim_temp "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"

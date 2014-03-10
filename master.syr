@@ -3,14 +3,14 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: master.prj
 
@@ -114,40 +114,230 @@ Analysis of file <"master.prj"> succeeded.
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for module <master> in library <work> with parameters.
-	FINISH = "011"
-	IDLE = "000"
-	LOAD = "001"
-	TRANSFER = "010"
-	UNLOAD = "100"
+	ADDR_TFR = "11"
+	DATA_TFR = "10"
+	IDLE = "00"
+	WREN = "00000110"
+	WREN_TFR = "01"
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <master>.
-	FINISH = 3'b011
-	IDLE = 3'b000
-	LOAD = 3'b001
-	TRANSFER = 3'b010
-	UNLOAD = 3'b100
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[7]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[6]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[5]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[4]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[3]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[2]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 59: The logic for <buffer[1]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 60: The logic for <buffer[0]> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-ERROR:Xst:899 - "master.v" line 55: The logic for <next_state> does not match a known FF or Latch template. The description style you are using to describe a register or latch is not supported in the current software release.
-WARNING:Xst:905 - "master.v" line 80: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <cnt>
+	ADDR_TFR = 2'b11
+	DATA_TFR = 2'b10
+	IDLE = 2'b00
+	WREN = 8'b00000110
+	WREN_TFR = 2'b01
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[31]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[30]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[29]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[28]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[27]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[26]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[25]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[24]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[23]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[22]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[21]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[20]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[19]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[18]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[17]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[16]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[15]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[14]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[13]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[12]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[11]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[10]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[9]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[8]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[7]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[6]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[5]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[4]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[3]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[2]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[1]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 64: Reset or set value is not constant in <buffer[0]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "master.v" line 65: Reset or set value is not constant in <cnt_transfer>. It could involve simulation mismatches
+WARNING:Xst:905 - "master.v" line 112: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <cnt_transfer>
+Module <master> is correct for synthesis.
  
-Found 9 error(s). Aborting synthesis.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <ss<0>> in unit <master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ss<1>> in unit <master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ss<2>> in unit <master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ss<3>> in unit <master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <master>.
+    Related source file is "master.v".
+WARNING:Xst:1306 - Output <data_out> is never assigned.
+WARNING:Xst:1305 - Output <busy_flag> is never assigned. Tied to value 0.
+WARNING:Xst:1306 - Output <mosi> is never assigned.
+WARNING:Xst:1305 - Output <sclk> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <miso> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <buffer<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <curr_state>.
+WARNING:Xst:737 - Found 4-bit latch for signal <next_state>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 3-bit up counter for signal <cnt_transfer>.
+    Found 4-bit register for signal <curr_state>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <master> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <next_state_0> in Unit <master> is equivalent to the following FF/Latch, which will be removed : <next_state_1> 
+WARNING:Xst:2677 - Node <next_state_0> of sequential type is unconnected in block <master>.
+WARNING:Xst:2677 - Node <next_state_2> of sequential type is unconnected in block <master>.
+WARNING:Xst:2677 - Node <next_state_3> of sequential type is unconnected in block <master>.
+WARNING:Xst:2677 - Node <curr_state_3> of sequential type is unconnected in block <master>.
+WARNING:Xst:2677 - Node <curr_state_2> of sequential type is unconnected in block <master>.
+WARNING:Xst:2677 - Node <curr_state_1> of sequential type is unconnected in block <master>.
+WARNING:Xst:2677 - Node <curr_state_0> of sequential type is unconnected in block <master>.
+
+Optimizing unit <master> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block master, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : master.ngr
+Top Level Output File Name         : master
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 39
+
+Cell Usage :
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# IO Buffers                       : 6
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                        0  out of   4656     0%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                   6  out of    232     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.84 secs
+ 
 --> 
 
-Total memory usage is 198696 kilobytes
+Total memory usage is 186892 kilobytes
 
-Number of errors   :    9 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

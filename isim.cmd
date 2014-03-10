@@ -1,3 +1,2 @@
 onerror {resume}
-wave add /
-run 400ns;
+run 800ns;

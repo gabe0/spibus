@@ -1,3 +1,4 @@
+verilog work "sclk_gen.v"
 verilog work "master.v"
-verilog work "top_tb.v"
+verilog work "master_tb.v"
 verilog work "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"
